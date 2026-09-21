@@ -55,15 +55,15 @@ sq.addEventListener("mouseover", (e) => {
 
 
 sq.addEventListener("mouseout", (e) => {
-	  if(sq1.getAttribute("style")){
+	  if(sq1.getAttribute("style") !== null){
 		    sq1.removeAttribute('style');
 	  }
 
-	  if(sq2.getAttribute("style")){
+	  if(sq2.getAttribute("style") !== null){
 		    sq2.removeAttribute('style');
 	  }
 
-	  if(sq3.getAttribute("style")){
+	  if(sq3.getAttribute("style") !== null){
 		    sq3.removeAttribute('style');
 	  }
 }

@@ -8,62 +8,23 @@ let style = document.querySelector("style");
 let sq = document.querySelector(".container");
 
 sq.addEventListener("mouseover", (e) => {
-	  if(e.target.getAttribute("id") === "square1"){
-		    sq2.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
-
-		    sq3.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
-	  }else if(e.target.getAttribute("id") === "square2"){
-		    sq1.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
-
-		    sq3.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
-	  }else if(e.target.getAttribute("id") === "square3"){
-		    sq2.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
-
-		    sq1.setAttribute("style", `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`);
+	  let t = e.target.getAttribute("id");
+	
+	  if(t === "square1"){
+		    sq2.style.backgroundColor = "#6F4E37";
+		    sq3.style.backgroundColor = "#6F4E37";
+	  }else if(t === "square2"){
+		    sq1.style.backgroundColor = "#6F4E37";
+		    sq3.style.backgroundColor = "#6F4E37";
+	  }else if(t === "square3"){
+		    sq1.style.backgroundColor = "#6F4E37";
+		    sq2.style.backgroundColor = "#6F4E37";
 	  }
 });
 
 
 sq.addEventListener("mouseout", (e) => {
-	  if(sq1.getAttribute("style") !== null){
-		    sq1.removeAttribute("style");
-	  }
-
-	  if(sq2.getAttribute("style") !== null){
-		    sq2.removeAttribute("style");
-	  }
-
-	  if(sq3.getAttribute("style") !== null){
-		    sq3.removeAttribute("style");
-	  }
+	 sq1.style.backgroundColor = "#E6E6FA";
+     sq2.style.backgroundColor = "#E6E6FA";
+     sq3.style.backgroundColor = "#E6E6FA";
 });

@@ -3,8 +3,6 @@ let sq1 = document.querySelector("#square1");
 let sq2 = document.querySelector("#square2");
 let sq3 = document.querySelector("#square3");
 
-let style = document.querySelector("style");
-
 let sq = document.querySelector(".container");
 
 sq.addEventListener("mouseover", (e) => {

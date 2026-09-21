@@ -36,7 +36,7 @@ sq.addEventListener("mouseover", (e) => {
 			margin: 10px;
 			background-color: #6F4E37;
 			cursor: pointer`);
-	  }else if(e.target.getAttribute("id") === "square1"){
+	  }else if(e.target.getAttribute("id") === "square3"){
 		    sq2.setAttribute("style", `width: 50px;
 			height: 50px;
 			display: inline-block;
@@ -44,7 +44,7 @@ sq.addEventListener("mouseover", (e) => {
 			background-color: #6F4E37;
 			cursor: pointer`);
 
-		    sq3.setAttribute("style", `width: 50px;
+		    sq1.setAttribute("style", `width: 50px;
 			height: 50px;
 			display: inline-block;
 			margin: 10px;
@@ -55,30 +55,15 @@ sq.addEventListener("mouseover", (e) => {
 
 
 sq.addEventListener("mouseout", (e) => {
-	  if(sq1.getAttribute("style") === `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`){
-		    sq1.removeAttribute('style');
+	  if(sq1.getAttribute("style") !== null){
+		    sq1.removeAttribute("style");
 	  }
 
-	  if(sq2.getAttribute("style") !== `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`){
-		    sq2.removeAttribute('style');
+	  if(sq2.getAttribute("style") !== null){
+		    sq2.removeAttribute("style");
 	  }
 
-	  if(sq3.getAttribute("style") !== `width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #6F4E37;
-			cursor: pointer`){
-		    sq3.removeAttribute('style');
+	  if(sq3.getAttribute("style") !== null){
+		    sq3.removeAttribute("style");
 	  }
-}
+});

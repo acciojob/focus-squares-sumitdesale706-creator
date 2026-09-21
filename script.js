@@ -55,15 +55,30 @@ sq.addEventListener("mouseover", (e) => {
 
 
 sq.addEventListener("mouseout", (e) => {
-	  if(sq1.getAttribute("style") !== null){
+	  if(sq1.getAttribute("style") === `width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 10px;
+			background-color: #6F4E37;
+			cursor: pointer`){
 		    sq1.removeAttribute('style');
 	  }
 
-	  if(sq2.getAttribute("style") !== null){
+	  if(sq2.getAttribute("style") !== `width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 10px;
+			background-color: #6F4E37;
+			cursor: pointer`){
 		    sq2.removeAttribute('style');
 	  }
 
-	  if(sq3.getAttribute("style") !== null){
+	  if(sq3.getAttribute("style") !== `width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 10px;
+			background-color: #6F4E37;
+			cursor: pointer`){
 		    sq3.removeAttribute('style');
 	  }
 }

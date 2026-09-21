@@ -63,7 +63,7 @@ sq.addEventListener("mouseout", (e) => {
 		    sq2.removeAttribute('style');
 	  }
 
-	  if(sq3.getAttribute("style"){
+	  if(sq3.getAttribute("style")){
 		    sq3.removeAttribute('style');
 	  }
 }
